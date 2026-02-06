@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embassy of Bangladesh, Washington D.C.</title>
+    <meta name="description" content="Embassy of Bangladesh in Washington D.C. — consular services, notices, events, and contact information." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="utility-bar">
+      <div class="container utility-wrap">
+        <p>People's Republic of Bangladesh</p>
+        <div class="utility-links">
+          <a href="#notices">Notices</a>
+          <a href="#forms">Forms</a>
+          <a href="#contact">Emergency</a>
+          <button id="langToggle" aria-label="Toggle language">বাংলা</button>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Embassy home">
+          <span class="seal" aria-hidden="true"></span>
+          <span>
+            <strong data-i18n="brandName">Embassy of Bangladesh</strong>
+            <small data-i18n="brandPlace">Washington, D.C., USA</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#notices">Circulars</a>
+          <a href="#leadership">Mission</a>
+          <a href="#gallery">Photo Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="btn btn-outline" href="#contact">24/7 Helpline</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow" data-i18n="heroEyebrow">Official Mission Portal</p>
+            <h1 data-i18n="heroTitle">Clean, modern access to embassy services for citizens and visitors.</h1>
+            <p class="lead" data-i18n="heroLead">
+              Designed with clear pathways for Passport, Visa, NVR, Attestation, and Welfare support,
+              while keeping official notices, procurement announcements, and event highlights easy to find.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="#services">Consular Services</a>
+              <a class="btn btn-muted" href="#notices">Latest Notice</a>
+            </div>
+            <ul class="hero-meta" role="list">
+              <li><strong>Office Hours:</strong> Sunday–Thursday, 9:00 AM – 5:00 PM</li>
+              <li><strong>Consular Desk:</strong> +1 202-244-0183</li>
+              <li><strong>Email:</strong> mission.washington@mofa.gov.bd</li>
+            </ul>
+          </div>
+
+          <aside class="hero-panel" id="leadership">
+            <p class="eyebrow">Message from the Ambassador</p>
+            <h2>H.E. Muhammad Imran</h2>
+            <p>
+              We are committed to citizen-focused services, responsive diplomacy, and stronger people-to-people links
+              between Bangladesh and the United States.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Citizen First</span>
+              <span class="chip">Digital Services</span>
+              <span class="chip">Transparent Notices</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="stats container" aria-label="Quick information">
+        <article><strong>08</strong><span>Core Consular Services</span></article>
+        <article><strong>24/7</strong><span>Emergency Hotline Access</span></article>
+        <article><strong>100+</strong><span>Community Events Facilitated</span></article>
+        <article><strong>1</strong><span>Mission for Bangladesh in D.C.</span></article>
+      </section>
+
+      <section class="services container" id="services">
+        <div class="section-head">
+          <h2>Consular & Citizen Services</h2>
+          <a href="#forms">Go to Forms</a>
+        </div>
+        <div class="service-grid" id="serviceGrid"></div>
+      </section>
+
+      <section class="notices" id="notices">
+        <div class="container">
+          <div class="section-head">
+            <h2>Notices, Circulars & Tenders</h2>
+            <a href="#">View archive</a>
+          </div>
+          <div class="notice-tabs" role="tablist" aria-label="Notice categories">
+            <button class="tab active" data-tab="consular">Consular</button>
+            <button class="tab" data-tab="holiday">Holiday</button>
+            <button class="tab" data-tab="procurement">Procurement</button>
+          </div>
+          <div class="notice-list" id="noticeList"></div>
+        </div>
+      </section>
+
+      <section class="forms container" id="forms">
+        <div class="section-head">
+          <h2>Downloadable Forms & Resources</h2>
+        </div>
+        <div class="form-grid">
+          <article>
+            <h3>Passport & MRP Form</h3>
+            <p>Application checklist, photograph specifications, and appointment guideline.</p>
+          </article>
+          <article>
+            <h3>NVR Application Form</h3>
+            <p>For foreign nationals of Bangladeshi origin requesting No Visa Required endorsement.</p>
+          </article>
+          <article>
+            <h3>Power of Attorney Template</h3>
+            <p>Attestation-ready sample format with witness and identification requirements.</p>
+          </article>
+          <article>
+            <h3>Birth Registration Request</h3>
+            <p>Required supporting documents, fee details, and processing timeline overview.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery container" id="gallery">
+        <div class="section-head">
+          <h2>Photo Gallery</h2>
+          <a href="#">All albums</a>
+        </div>
+        <p class="section-intro">
+          National day observances, bilateral meetings, and diaspora engagement programs at the Embassy.
+        </p>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </section>
+
+      <section class="contact container" id="contact">
+        <div>
+          <h2>Contact the Embassy</h2>
+          <p>3510 International Drive NW, Washington, DC 20008, United States</p>
+          <p><strong>Phone:</strong> +1 202-244-0183 · <strong>Email:</strong> mission.washington@mofa.gov.bd</p>
+        </div>
+        <div class="contact-box">
+          <h3>Emergency Assistance</h3>
+          <p>For urgent consular matters outside office hours, call mission hotline and follow duty officer instructions.</p>
+          <a class="btn" href="tel:+12022440183">Call Now</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Embassy of Bangladesh</strong>
+          <p>Washington, D.C., USA</p>
+        </div>
+        <div>
+          <p>Office: Sunday–Thursday</p>
+          <p>9:00 AM – 5:00 PM</p>
+        </div>
+        <div>
+          <p>© Embassy of Bangladesh</p>
+          <p>Modern UI concept frontend</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
